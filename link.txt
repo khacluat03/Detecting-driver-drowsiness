@@ -1,0 +1,21 @@
+Notebook training ViT: https://www.kaggle.com/code/ngctnhong/vit-01
+
+Notebook training CNN: https://www.kaggle.com/code/ngctnhong/cnn-cv-01
+
+Notebook training YOLO11: https://colab.research.google.com/drive/1FHDNQxvbh8P5Oj6rV6-kSXyojLdgtNHP?usp=sharing
+
+Dataset for training ViT and CNN: https://www.kaggle.com/datasets/nguyenluatdev/computer-vision-data224x224
+
+
+Dataset for training YOLO: https://www.kaggle.com/datasets/nguyenluatdev/data-computer-vision
+yaml for training yolo: https://www.kaggle.com/datasets/nguyenluatdev/yaml-v6
+
+You can use dataset to train YOLO with code:
+
+```
+from roboflow import Roboflow
+rf = Roboflow(api_key="tOfbkzltAMQMayGo8I3p")
+project = rf.workspace("luatluat").project("final2-kwf46-fkead")
+version = project.version(2)
+dataset = version.download("yolov11")
+```

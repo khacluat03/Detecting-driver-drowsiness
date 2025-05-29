@@ -3,7 +3,7 @@ import cv2
 from playsound import playsound
 import winsound
 
-model = YOLO("/runs/detect/train2/weights/best.pt")
+model = YOLO("yolo_model/best.pt")
 
 cap = cv2.VideoCapture(0)
 
