@@ -1,46 +1,58 @@
-# Dự án Phát hiện Cảnh báo Buồn ngủ và Mất tập trung khi Lái xe
+# Project to Detect Drowsiness and Distraction while Driving
 
-## Giới thiệu
-Dự án này tập trung vào việc phát triển hệ thống phát hiện cảnh báo buồn ngủ và mất tập trung khi lái xe sử dụng hai mô hình học sâu khác nhau: CNN (Convolutional Neural Network) và ViT (Vision Transformer).
+## Introduction
+This project focuses on developing a system to detect drowsiness and distraction while driving using three different deep learning models: YOLO, CNN (Convolutional Neural Network) and ViT (Vision Transformer).
 
-## Cấu trúc dự án
-- `CNN_CV_01.ipynb`: Notebook triển khai mô hình CNN
-- `ViT_CV_01.ipynb`: Notebook triển khai mô hình Vision Transformer
-- `data224x224/`: Thư mục chứa dữ liệu hình ảnh đã được xử lý (kích thước 224x224)
-- `cv_report.docx`: Báo cáo chi tiết về dự án
-- `group_15_slide_computer-vision.pptx`: Slide thuyết trình về dự án
+## File structure
+- `CNN_CV_01.ipynb`: CNN model training notebook
+- `ViT_CV_01.ipynb`: Vision Transformer model training notebook
+- `data224x224/`: Folder containing processed image data (size 224x224) [LINK](https://www.kaggle.com/datasets/nguyenluatdev/computer-vision-data224x224)
+- `cv_report.docx`: Detailed project report
+- `group_15_slide_computer-vision.pptx`: Project presentation slide
+- `CodeTrainYolo`: Training YOLO model with [data](https://www.kaggle.com/datasets/nguyenluatdev/data-computer-vision)
 
-## Link Kaggle
-Các notebook huấn luyện mô hình có thể được tìm thấy tại:
-- Vision Transformer (ViT): https://www.kaggle.com/code/ngctnhong/vit-01
-- CNN: https://www.kaggle.com/code/ngctnhong/cnn-cv-01
+## You can use the dataset to train YOLO via the labeled API from Roboflow
+```
+from roboflow import Roboflow
+rf = Roboflow(api_key="tOfbkzltAMQMayGo8I3p")
+project = rf.workspace("luatluat").project("final2-kwf46-fkead")
+version = project.version(2)
+dataset = version.download("yolov11")
+```
 
-## Mục tiêu
-- Phát hiện tình trạng buồn ngủ của người lái xe
-- Phát hiện các hành vi mất tập trung khi lái xe
-- Cảnh báo kịp thời để đảm bảo an toàn giao thông
+## Kaggle Link
+The model training notebooks can be found at:
+- Vision Transformer (ViT): [notebook](https://www.kaggle.com/code/ngctnhong/vit-01)
+- CNN: [notebook](https://www.kaggle.com/code/ngctnhong/cnn-cv-01)
+- YOLO: [notebook](https://colab.research.google.com/drive/1FHDNQxvbh8P5Oj6rV6-kSXyojLdgtNHP?usp=sharing)
 
-## Công nghệ sử dụng
+## Objectives
+- Detect driver drowsiness
+- Detect distracted driving behaviors
+- Timely warning to ensure traffic safety
+
+## Technology used
 - Python
 - Deep Learning
 - Computer Vision
 - CNN (Convolutional Neural Network)
 - ViT (Vision Transformer)
+- YOLO (ultralytics)
 
-## Hướng dẫn cài đặt và chạy
+## Installation and running instructions
 
-### Yêu cầu hệ thống
-- Python 3.8 trở lên
-- CUDA-compatible GPU (khuyến nghị cho việc huấn luyện mô hình)
+### System requirements
+- Python 3.8 or later
+- CUDA-compatible GPU (recommended for model training)
 
-### Cài đặt môi trường
+### Environment setup
 1. Clone repository:
 ```bash
 git clone [URL_REPOSITORY]
 cd final-project-computer-vision
 ```
 
-2. Tạo môi trường ảo (khuyến nghị):
+2. Create a virtual environment (recommended):
 ```bash
 python -m venv venv
 # Windows
@@ -49,37 +61,26 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-3. Cài đặt các thư viện cần thiết:
+3. Install the required libraries:
 ```bash
 pip install -r requirements.txt
 ```
 
-### Cấu trúc thư mục dữ liệu
-```
-data224x224/
-├── train/
-│   ├── closed_eye/
-│   ├── open_eye/
-│   ├── looking_away/
-│   └── yawning/
-└── test/
-    ├── closed_eye/
-    ├── open_eye/
-    ├── looking_away/
-    └── yawning/
-```
-
-### Chạy notebook
-1. Mở Jupyter Notebook:
+### Run the notebook
+1. Open Jupyter Notebook:
 ```bash
 jupyter notebook
 ```
 
-2. Chọn và chạy một trong các notebook:
-   - `cnn-cv-01.ipynb` cho mô hình CNN
-   - `vit-01.ipynb` cho mô hình Vision Transformer
+2. Select and run one of the notebooks:
 
-### Lưu ý
-- Đảm bảo đã tải đầy đủ dữ liệu vào thư mục `data224x224/`
-- Kiểm tra GPU đã được cài đặt và hoạt động đúng cách
-- Có thể cần điều chỉnh các tham số trong notebook tùy theo cấu hình máy tính 
+- `cnn-cv-01.ipynb` for CNN model
+
+- `vit-01.ipynb` for Vision Transformer model
+
+- `YOLO` for YOLO pretrained model
+
+### Note
+- Make sure all data is loaded into the `data224x224/` folder
+- Check that the GPU is installed and working properly
+- Parameters in the notebook may need to be adjusted depending on the configuration computer.
