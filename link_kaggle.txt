@@ -1,0 +1,3 @@
+https://www.kaggle.com/code/ngctnhong/vit-01
+
+https://www.kaggle.com/code/ngctnhong/cnn-cv-01
