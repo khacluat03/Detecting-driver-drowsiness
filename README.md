@@ -48,7 +48,7 @@ Các notebook huấn luyện mô hình có thể được tìm thấy tại:
 ### Thiết lập môi trường
 1. Clone repository:
 ```bash
-git clone [URL_REPOSITORY]
+git clone [[URL_REPOSITORY]](https://github.com/khacluat03/final-project-computer-vision.git)
 cd final-project-computer-vision
 ```
 
