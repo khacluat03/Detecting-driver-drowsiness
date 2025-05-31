@@ -89,10 +89,16 @@ jupyter notebook
 
 ## Tài liệu tham khảo:
 [1]. Khandave,  A.  (2020,  September  20).  *Driver  drowsiness  detection  alert  system  with Open-CV & Keras using IP-WebCam for camera connection.* Retrieved from [https://www.linkedin.com/pulse/driver-drowsiness-detection-alert-system-open-cv-keras-khandave/]
+
 [2]. Sahayadhas, A., Sundaraj, K., & Murugappan, M. (2012). *Detecting driver drowsiness based on sensors: A review.* Sensors, 12(12), 16937–16953. [https://doi.org/10.3390/s121216937](https://doi.org/10.3390/s121216937)
+
 [3]. Díaz-Santos, S., Cigala-Álvarez, Ó., Gonzalez-Sosa, E., Caballero-Gil, P., & Caballero-Gil,  C.  (2024). *Driver  identification  and  detection  of  drowsiness  while  driving.*  Applied Sciences, 14(6), 2603. [https://www.mdpi.com/2076-3417/14/6/2603](https://www.mdpi.com/2076-3417/14/6/2603)
+
 [4]. Alshaqaqi, B., Baquhaizel, A. S., Ouis, M. E. A., Boumehed, M., Ouamri, A., & Keche, M. (2013). *Driver drowsiness detection system.* Trong 2013 8th International Workshop on Systems, Signal Processing and their Applications (WoSSPA). IEEE.
+
 [5]. Liu, C. C., Hosking, S. G., & Lenné, M. G. (2009). *Predicting driver drowsiness using vehicle measures: Recent insights and future challenges.* Journal of Sleep Research, 18(3), 239-253. [https://doi.org/10.1016/j.jsr.2009.04.005](https://doi.org/10.1016/j.jsr.2009.04.005)
+
 [6]. Vural, E., Cetin, M., Ercil, A., Littlewort, G., Bartlett, M., & Movellan, J. (n.d.). *Drowsy Driver  Detection  Through  Facial  Movement  Analysis.*  Sabanci  University;  University  of California San Diego. 
 [7]. Grace, R., Byrne, V. E., Bierman, D. M., Legrand, J.-M., Gricourt, D., & Davis, B. K. (1998). *A drowsy driver detection system for heavy vehicles.* In 17th DASC. AIAA/IEEE/SAE. Digital Avionics Systems Conference. Proceedings (Cat. No.98CH36267). IEEE.
-[8]. Zhang, H., Liu, T., Lyu, J., & Chen, D. (2023). *Integrate memory mechanism in multi-granularity deep framework for driver drowsiness detection.* Intelligence & Robotics, 3(4), 614-631. https://doi.org/10.20517/ir.2023.34 
+
+[8]. Zhang, H., Liu, T., Lyu, J., & Chen, D. (2023). *Integrate memory mechanism in multi-granularity deep framework for driver drowsiness detection.* Intelligence & Robotics, 3(4), 614-631. [https://doi.org/10.20517/ir.2023.34](https://doi.org/10.20517/ir.2023.34)
