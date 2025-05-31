@@ -1,0 +1,13 @@
+train: /kaggle/working/datasets/final2-2/train/images
+val: /kaggle/working/datasets/final2-2/valid/images
+test: /kaggle/working/datasets/final2-2/test/images
+
+nc: 14
+names: ['awake', 'Drowsy', 'Drowsy', 'Drowsy', 'Drowsy', 'Drowsy', 'Drowsy', 'face', 'awake', 'awake', 'Drowsy', 'awake', 'Drowsy', 'Drowsy']
+
+roboflow:
+  workspace: luatluat
+  project: final2-kwf46-fkead
+  version: 2
+  license: CC BY 4.0
+  url: https://app.roboflow.com/luatluat/final2-kwf46-fkead/2
